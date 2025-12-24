@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Market - Premium Game Top Up & Vouchers</title>
+    <meta name="description"
+        content="Trusted online store for game top-ups, gift cards, and software licenses. Instant delivery and secure payments.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#3b82f6', // Blue 500
+                        secondary: '#8b5cf6', // Violet 500
+                        dark: '#0f172a', // Slate 900
+                        darker: '#020617', // Slate 950
+                        surface: '#1e293b', // Slate 800
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="bg-dark text-slate-50 antialiased">
+
+    <!-- Header -->
+    <header class="fixed w-full top-0 z-50 glass-nav transition-all duration-300">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <!-- Logo -->
+            <a href="#" class="flex items-center gap-2 group">
+                <img src="assets/logo.png" alt="Digital Market Logo"
+                    class="w-10 h-10 object-contain drop-shadow-lg group-hover:scale-110 transition-transform">
+                <span
+                    class="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-violet-400">Digital
+                    Market</span>
+            </a>
+
+            <!-- Desktop Nav -->
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+                <a href="#" class="hover:text-white transition-colors">Home</a>
+                <a href="#games" class="hover:text-white transition-colors">Game Top Up</a>
+                <a href="#vouchers" class="hover:text-white transition-colors">Vouchers</a>
+                <a href="#ott" class="hover:text-white transition-colors">OTT</a>
+                <a href="#contact" class="hover:text-white transition-colors">Contact</a>
+            </nav>
+
+            <!-- Actions -->
+            <div class="hidden md:flex items-center gap-4">
+                <div class="relative">
+                    <input type="text" id="search-input" placeholder="Search games..."
+                        class="bg-surface border border-slate-700 rounded-full px-4 py-1.5 text-sm focus:outline-none focus:border-primary w-48 transition-all focus:w-64">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                        class="h-4 w-4 absolute right-3 top-1/2 -translate-y-1/2 text-slate-400" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
+                </div>
+                <a href="login.html" class="text-sm font-medium text-slate-300 hover:text-white">Login</a>
+                <a href="register.html"
+                    class="bg-primary hover:bg-blue-600 text-white text-sm font-medium px-4 py-2 rounded-full transition-colors shadow-lg shadow-blue-500/20">Register</a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-btn" class="md:hidden text-slate-300 hover:text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu"
+            class="hidden md:hidden bg-surface border-t border-slate-700 absolute w-full left-0 top-full p-4 flex flex-col gap-4 shadow-xl">
+            <a href="#" class="text-slate-300 hover:text-white">Home</a>
+            <a href="#games" class="text-slate-300 hover:text-white">Game Top Up</a>
+            <a href="#vouchers" class="text-slate-300 hover:text-white">Vouchers</a>
+            <a href="#ott" class="text-slate-300 hover:text-white">OTT</a>
+            <a href="#contact" class="text-slate-300 hover:text-white">Contact</a>
+            <hr class="border-slate-700">
+            <a href="login.html" class="text-slate-300 hover:text-white">Login</a>
+            <a href="register.html" class="bg-primary text-center text-white py-2 rounded-lg">Register</a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="pt-20">
+        <!-- Hero Section -->
+        <section class="relative h-[400px] md:h-[500px] flex items-center justify-center overflow-hidden">
+            <div class="absolute inset-0 bg-gradient-to-b from-primary/10 to-dark z-0"></div>
+            <!-- Background Pattern/Image Placeholder -->
+            <div
+                class="absolute inset-0 opacity-20 bg-[url('https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=2070&auto=format&fit=crop')] bg-cover bg-center">
+            </div>
+
+            <div class="container mx-auto px-4 relative z-10 text-center">
+                <h1
+                    class="text-4xl md:text-6xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 via-violet-400 to-fuchsia-400 animate-pulse">
+                    Level Up Your Gaming
+                </h1>
+                <p class="text-slate-400 text-lg md:text-xl mb-8 max-w-2xl mx-auto">
+                    Instant delivery for Game Top-ups, Gift Cards, and Software Licenses. Trusted by thousands of
+                    gamers.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="#games"
+                        class="bg-primary hover:bg-blue-600 text-white px-8 py-3 rounded-full font-semibold transition-all shadow-lg shadow-blue-500/30 hover:scale-105">
+                        Browse Games
+                    </a>
+                    <a href="#vouchers"
+                        class="bg-surface hover:bg-slate-700 text-white border border-slate-600 px-8 py-3 rounded-full font-semibold transition-all hover:scale-105">
+                        Buy Vouchers
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Hot Items Section -->
+        <section class="py-12 container mx-auto px-4">
+            <div class="flex items-center justify-between mb-8">
+                <h2 class="text-2xl font-bold flex items-center gap-2">
+                    <span class="text-red-500">🔥</span> Hot Items
+                </h2>
+                <a href="#" class="text-primary text-sm hover:underline">View All</a>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
+                <!-- Card 1 -->
+                <a href="#"
+                    class="block bg-surface rounded-xl overflow-hidden border border-slate-700 card-hover group">
+                    <div class="aspect-[3/4] bg-slate-800 relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=2070&auto=format&fit=crop"
+                            alt="Free Fire"
+                            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute top-2 right-2 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded">
+                            HOT</div>
+                    </div>
+                    <div class="p-3">
+                        <h3 class="font-semibold text-sm truncate">Free Fire Diamond</h3>
+                        <p class="text-xs text-slate-400 mt-1">Instant Delivery</p>
+                    </div>
+                </a>
+                <!-- Card 2 -->
+                <a href="#"
+                    class="block bg-surface rounded-xl overflow-hidden border border-slate-700 card-hover group">
+                    <div class="aspect-[3/4] bg-slate-800 relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1593305841991-05c297ba4575?q=80&w=1957&auto=format&fit=crop"
+                            alt="PUBG"
+                            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <div class="p-3">
+                        <h3 class="font-semibold text-sm truncate">PUBG Mobile UC</h3>
+                        <p class="text-xs text-slate-400 mt-1">Global Region</p>
+                    </div>
+                </a>
+                <!-- Card 3 -->
+                <a href="#"
+                    class="block bg-surface rounded-xl overflow-hidden border border-slate-700 card-hover group">
+                    <div class="aspect-[3/4] bg-slate-800 relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1605901309584-818e25960b8f?q=80&w=2087&auto=format&fit=crop"
+                            alt="Valorant"
+                            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <div class="p-3">
+                        <h3 class="font-semibold text-sm truncate">Valorant Points</h3>
+                        <p class="text-xs text-slate-400 mt-1">Riot Games</p>
+                    </div>
+                </a>
+                <!-- Card 4 -->
+                <a href="#"
+                    class="block bg-surface rounded-xl overflow-hidden border border-slate-700 card-hover group">
+                    <div class="aspect-[3/4] bg-slate-800 relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1552820728-8b83bb6b773f?q=80&w=2070&auto=format&fit=crop"
+                            alt="Mobile Legends"
+                            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <div class="p-3">
+                        <h3 class="font-semibold text-sm truncate">Mobile Legends</h3>
+                        <p class="text-xs text-slate-400 mt-1">Diamonds</p>
+                    </div>
+                </a>
+                <!-- Card 5 -->
+                <a href="#"
+                    class="block bg-surface rounded-xl overflow-hidden border border-slate-700 card-hover group">
+                    <div class="aspect-[3/4] bg-slate-800 relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1627856014759-08529612289d?q=80&w=2070&auto=format&fit=crop"
+                            alt="Genshin Impact"
+                            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <div class="p-3">
+                        <h3 class="font-semibold text-sm truncate">Genshin Impact</h3>
+                        <p class="text-xs text-slate-400 mt-1">Genesis Crystals</p>
+                    </div>
+                </a>
+                <!-- Card 6 -->
+                <a href="#"
+                    class="block bg-surface rounded-xl overflow-hidden border border-slate-700 card-hover group">
+                    <div class="aspect-[3/4] bg-slate-800 relative overflow-hidden">
+                        <img src="https://plus.unsplash.com/premium_photo-1661306437817-8ab34be91e0c?q=80&w=2070&auto=format&fit=crop"
+                            alt="Netflix"
+                            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <div class="p-3">
+                        <h3 class="font-semibold text-sm truncate">Netflix Gift Card</h3>
+                        <p class="text-xs text-slate-400 mt-1">Subscription</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- Game Top Up Section -->
+        <section id="games" class="py-12 bg-darker">
+            <div class="container mx-auto px-4">
+                <div class="flex items-center justify-between mb-8">
+                    <h2 class="text-2xl font-bold flex items-center gap-2">
+                        <span class="text-primary">🎮</span> Game Top Up
+                    </h2>
+                    <a href="#" class="text-primary text-sm hover:underline">View All</a>
+                </div>
+                <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
+                    <!-- Card 1 -->
+                    <a href="#"
+                        class="block bg-surface rounded-xl overflow-hidden border border-slate-700 card-hover group">
+                        <div class="aspect-[3/4] bg-slate-800 relative overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=2070&auto=format&fit=crop"
+                                alt="Free Fire"
+                                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        </div>
+                        <div class="p-3">
+                            <h3 class="font-semibold text-sm truncate">Free Fire</h3>
+                            <p class="text-xs text-slate-400 mt-1">Garena</p>
+                        </div>
+                    </a>
+                    <!-- Card 2 -->
+                    <a href="#"
+                        class="block bg-surface rounded-xl overflow-hidden border border-slate-700 card-hover group">
+                        <div class="aspect-[3/4] bg-slate-800 relative overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1593305841991-05c297ba4575?q=80&w=1957&auto=format&fit=crop"
+                                alt="PUBG Mobile"
+                                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        </div>
+                        <div class="p-3">
+                            <h3 class="font-semibold text-sm truncate">PUBG Mobile</h3>
+                            <p class="text-xs text-slate-400 mt-1">Tencent</p>
+                        </div>
+                    </a>
+                    <!-- Card 3 -->
+                    <a href="#"
+                        class="block bg-surface rounded-xl overflow-hidden border border-slate-700 card-hover group">
+                        <div class="aspect-[3/4] bg-slate-800 relative overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1552820728-8b83bb6b773f?q=80&w=2070&auto=format&fit=crop"
+                                alt="Mobile Legends"
+                                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        </div>
+                        <div class="p-3">
+                            <h3 class="font-semibold text-sm truncate">Mobile Legends</h3>
+                            <p class="text-xs text-slate-400 mt-1">Moonton</p>
+                        </div>
+                    </a>
+                    <!-- Card 4 -->
+                    <a href="#"
+                        class="block bg-surface rounded-xl overflow-hidden border border-slate-700 card-hover group">
+                        <div class="aspect-[3/4] bg-slate-800 relative overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1605901309584-818e25960b8f?q=80&w=2087&auto=format&fit=crop"
+                                alt="Valorant"
+                                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        </div>
+                        <div class="p-3">
+                            <h3 class="font-semibold text-sm truncate">Valorant</h3>
+                            <p class="text-xs text-slate-400 mt-1">Riot Games</p>
+                        </div>
+                    </a>
+                    <!-- Card 5 -->
+                    <a href="#"
+                        class="block bg-surface rounded-xl overflow-hidden border border-slate-700 card-hover group">
+                        <div class="aspect-[3/4] bg-slate-800 relative overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1627856014759-08529612289d?q=80&w=2070&auto=format&fit=crop"
+                                alt="Genshin Impact"
+                                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        </div>
+                        <div class="p-3">
+                            <h3 class="font-semibold text-sm truncate">Genshin Impact</h3>
+                            <p class="text-xs text-slate-400 mt-1">HoYoverse</p>
+                        </div>
+                    </a>
+                    <!-- Card 6 -->
+                    <a href="#"
+                        class="block bg-surface rounded-xl overflow-hidden border border-slate-700 card-hover group">
+                        <div class="aspect-[3/4] bg-slate-800 relative overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?q=80&w=2071&auto=format&fit=crop"
+                                alt="Call of Duty"
+                                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        </div>
+                        <div class="p-3">
+                            <h3 class="font-semibold text-sm truncate">Call of Duty</h3>
+                            <p class="text-xs text-slate-400 mt-1">Activision</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Us -->
+        <section class="py-16 container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Why Top Up on Digital Market?</h2>
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="text-center p-6 bg-surface rounded-2xl border border-slate-700">
+                    <div
+                        class="w-16 h-16 bg-primary/20 text-primary rounded-full flex items-center justify-center mx-auto mb-4 text-2xl">
+                        ⚡</div>
+                    <h3 class="font-bold mb-2">Instant Delivery</h3>
+                    <p class="text-slate-400 text-sm">Get your game credits immediately after payment.</p>
+                </div>
+                <div class="text-center p-6 bg-surface rounded-2xl border border-slate-700">
+                    <div
+                        class="w-16 h-16 bg-secondary/20 text-secondary rounded-full flex items-center justify-center mx-auto mb-4 text-2xl">
+                        🛡️</div>
+                    <h3 class="font-bold mb-2">Secure Payment</h3>
+                    <p class="text-slate-400 text-sm">100% secure payment methods for peace of mind.</p>
+                </div>
+                <div class="text-center p-6 bg-surface rounded-2xl border border-slate-700">
+                    <div
+                        class="w-16 h-16 bg-green-500/20 text-green-500 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl">
+                        💬</div>
+                    <h3 class="font-bold mb-2">24/7 Support</h3>
+                    <p class="text-slate-400 text-sm">Our support team is always ready to help you.</p>
+                </div>
+                <div class="text-center p-6 bg-surface rounded-2xl border border-slate-700">
+                    <div
+                        class="w-16 h-16 bg-yellow-500/20 text-yellow-500 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl">
+                        💰</div>
+                    <h3 class="font-bold mb-2">Best Prices</h3>
+                    <p class="text-slate-400 text-sm">We offer the most competitive prices in the market.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-darker border-t border-slate-800 pt-16 pb-8">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8 mb-12">
+                <div>
+                    <a href="#" class="flex items-center gap-2 mb-4">
+                        <span
+                            class="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-violet-400">Digital
+                            Market</span>
+                    </a>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        The ultimate destination for gamers. Top up your favorite games, buy gift cards, and more with
+                        instant delivery.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-sm text-slate-400">
+                        <li><a href="#" class="hover:text-primary transition-colors">Home</a></li>
+                        <li><a href="#" class="hover:text-primary transition-colors">Game Top Up</a></li>
+                        <li><a href="#" class="hover:text-primary transition-colors">Vouchers</a></li>
+                        <li><a href="#" class="hover:text-primary transition-colors">Blog</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Support</h4>
+                    <ul class="space-y-2 text-sm text-slate-400">
+                        <li><a href="#" class="hover:text-primary transition-colors">Contact Us</a></li>
+                        <li><a href="#" class="hover:text-primary transition-colors">Terms & Conditions</a></li>
+                        <li><a href="#" class="hover:text-primary transition-colors">Privacy Policy</a></li>
+                        <li><a href="#" class="hover:text-primary transition-colors">Refund Policy</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Connect With Us</h4>
+                    <div class="flex gap-4">
+                        <a href="#"
+                            class="w-10 h-10 bg-surface rounded-full flex items-center justify-center text-slate-400 hover:bg-primary hover:text-white transition-all">
+                            <!-- Facebook Icon -->
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                            </svg>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 bg-surface rounded-full flex items-center justify-center text-slate-400 hover:bg-primary hover:text-white transition-all">
+                            <!-- Twitter Icon -->
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z" />
+                            </svg>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 bg-surface rounded-full flex items-center justify-center text-slate-400 hover:bg-primary hover:text-white transition-all">
+                            <!-- Instagram Icon -->
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-slate-800 pt-8 text-center text-sm text-slate-500">
+                <p>&copy; 2024 Digital Market. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
